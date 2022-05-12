@@ -109,16 +109,38 @@ body .wrapper .mobile-menu ul li a:hover {
   background-color: #f11616;
 }
 
+body .wrapper .header .social a img {
+  max-width: 40px;
+  filter: grayscale();
+}
+
+body .wrapper .mobile-menu .social {
+  display: flex;
+  max-width: 40px;
+  filter: grayscale();
+  margin-left: 34px;
+}
+
 
 /*  -------------- Mobile Header ------------- */
+@media screen and (min-width: 1096px) {
+  body .wrapper .mobile-menu {
+    display: none;
+  }
+}
 
-@media screen and (max-width: 1025px) {
+
+@media screen and (max-width: 1096px) {
   body .wrapper .header .navbar ul {
     display: none;
   }
 
   body .wrapper .header .navbar .n-mobile {
     display: block;
+  }
+
+  body .wrapper .header .social {
+    display: none;
   }
 
   body .wrapper .header .navbar .n-mobile button {
